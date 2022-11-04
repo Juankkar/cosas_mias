@@ -4,8 +4,8 @@ En este repositorio guardo funciones que he desarrollado que creo que les pueda 
 
 ### Podemos encontrar:
 
-* Funciones creadas en R. [funR](https://github.com/Juankkar/mis_cosas/tree/main/funciones_propias)
+* Funciones creadas en R. [funR](funciones_propias)
 
-    * [Contraste de hipótesis](funR/contraste_hip.R).
+    * [Contraste de hipótesis](contraste_hip.R).
 
 * Funciones de Shell Scripting. [funshell](funshell).
