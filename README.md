@@ -2,7 +2,7 @@
 
 ## **Contenido**
 
-  * ### **1)** [Funciones útiles desarrolladas desarrolladas por mí.](funcionas_propias) 
+  * ### **1)** [Funciones útiles desarrolladas desarrolladas por mí.](funciones_propias) 
 
   * ### **2)** [Set up de git.](setup_git)
 
