@@ -1,21 +1,29 @@
 # **SET-UP para poder interactuar entre mi ordenador local y mi cuenta de GitHub.**
 
-### Script con el programa: **[setup_git.sh](code/setup_git.sh)**
-
 ### Si te va bien y quieres ver para que sirve esto, tengo un repositorio donde comento los comandos básicos que conozco de ```git```, se llama: **[Git_iris](https://github.com/Juankkar/Git_Iris)**
 
-Lo que este hace es:
+## Script con el programa: **[setup_git.sh](code/setup_git.sh)**
 
-1) Insertar en tu ordenador tus 
-***credenciales*** para tu cuenta de GitHub.
+### Tabla de contenido
+1. [Función del secript](#1-funciónde-de-git)
+2. [Pasos a seguir](#2-pasos-a-seguir)
+    -   [Ver si tienes instalado el comando de git](#21-ver-si-tienes-instalado-el-comando-de-git)  
+    -   [Correr el script](#22-lo-siguiente-finalmente-es-correr-el-script-setup_git)
+        -   [Rellenar credenciales](#221-la-primera-parte-del-script-consiste-en-relleganr-tus-credenciale-en-el-siguiente-orden)
+        -   [Crear la SSH key](#222-crear-la-ssh-key)
 
-2) Obtención de la ***SSH key***. La idea de esta llave es crear una "passphrase" (cotraseña, pero no de tu cuenta de GitHub), para poder clonar, modificar, y guardar cambios que se hagan a un repositorio de forma remota a tu cuenta. Es decir, trabajar en un repositorio de GitHub desde la terminal/editor de texto desde tu ordenador local.
 
-**El script está hecho de tal manera de que al correrlo te va a ir pidiendo todo lo necesario**. En principio no haría falta modificar nada, a mí me ha ido bien.
+ ## 1) Funciónde de git
 
-## Pasos a seguir:
+* Insertar en tu ordenador tus ***credenciales*** para tu cuenta de GitHub.
 
-### 1) Ver si tienes instalado el comando de git:
+* Obtención de la ***SSH key***. La idea de esta llave es crear una "passphrase" (cotraseña, pero no de tu cuenta de GitHub), para poder clonar, modificar, y guardar cambios que se hagan a un repositorio de forma remota a tu cuenta. Es decir, trabajar en un repositorio de GitHub desde la terminal/editor de texto desde tu ordenador local.
+
+* **El script está hecho de tal manera de que al correrlo te va a ir pidiendo todo lo necesario**. En principio no haría falta modificar nada, a mí me ha ido bien.
+
+## 2) Pasos a seguir:
+
+* ### 2.1) Ver si tienes instalado el comando de git:
 
 ```
 git --version
@@ -32,11 +40,11 @@ Una vez lo tengas instalados miras de nuevo ```git --version```, te debería sal
     <img src="pictures/2git_version.png">
 </p>
 
-### 2) Lo siguiente finalmente es correr el script (```./setup_git```).
+* ### 2.2) Lo siguiente finalmente es correr el script (```./setup_git```).
 
 Te recomiendo que copies el script en sí en tu usuario del home, para correrlo ahí. De todas formas no debería haber mayor porblema si no haces esto.
 
-2.1) La primera parte del script consiste en relleganr tus credenciale en el siguiente orden:
+#### 2.2.1) La primera parte del script consiste en relleganr tus credenciale en el siguiente orden:
 
 * Tu nombre.
 * Tu correo electrónico.
@@ -62,7 +70,9 @@ Digamos que mi nombre va separado y lo quiero cambiar (***al rellenar el script 
     <img src="pictures/git_edit.png">
 </p>
 
-2.2) La segunda parte consiste en crear la SHH key, para ello sólo tienes que realizar lo que se te pide de nuevo, lo he divido en dos partes:
+#### 2.2.2) Crear la SSH key  
+
+La segunda parte consiste en crear la SHH key, para ello sólo tienes que realizar lo que se te pide de nuevo, lo he divido en dos partes:
 
 1) En la primera parte, a partir de "Ahora toca conseguir la SHH key" hasta el símbolo ese extraño. Tienes que tener en cuenta la parte que dice:  
 "***Enter de file wich you want save the key***" Dale simplemente a enter en esa ruta del home.Lo siguiente es la ***"passphrase"***, la contraseña que te pedirá cuando uses ciertos comandos de git: ```git pull```, ```git push```, ```git clone```...
@@ -71,7 +81,7 @@ Digamos que mi nombre va separado y lo quiero cambiar (***al rellenar el script 
     <img src="pictures/4shh_key1.png">
 </p>
 
-2) Después de ese símbolo raro te va a pedir esta vez que insertes la passphrase que has creado. Y te pritará el resultado de tu key: tienes que copiarlo (ratón) desde **flecha roja**-**flecha roja**. Si no se ve bien, es desde shh-rsa---tuemail@email.com
+2) Después de ese símbolo raro te va a pedir esta vez que insertes la passphrase que has creado. Y te pritará el resultado de tu key: tienes que copiarlo (ratón) desde **flecha roja**-**flecha roja**.
 
 <p align="center">
     <img src="pictures/5shhkey2.png">
