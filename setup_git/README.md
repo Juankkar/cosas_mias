@@ -1,7 +1,5 @@
 # **SET-UP para poder interactuar entre mi ordenador local y mi cuenta de GitHub.**
 
-### Si te va bien y quieres ver para que sirve esto, tengo un repositorio donde comento los comandos básicos que conozco de ```git```, se llama: **[Git_iris](https://github.com/Juankkar/Git_Iris)**
-
 ## Script con el programa: **[setup_git.sh](code/setup_git.sh)**
 
 ### Tabla de contenido
@@ -19,7 +17,7 @@
 
 * Obtención de la ***SSH key***. La idea de esta llave es crear una "passphrase" (cotraseña, pero no de tu cuenta de GitHub), para poder clonar, modificar, y guardar cambios que se hagan a un repositorio de forma remota a tu cuenta. Es decir, trabajar en un repositorio de GitHub desde la terminal/editor de texto desde tu ordenador local.
 
-* **El script está hecho de tal manera de que al correrlo te va a ir pidiendo todo lo necesario**. En principio no haría falta modificar nada, a mí me ha ido bien.
+* **El script está hecho de tal manera de que al correrlo te va a ir pidiendo todo lo necesario**.
 
 ## 2) Pasos a seguir:
 
@@ -32,9 +30,9 @@ git --version
 Si te sale un error lo instalas
 
 ```
-sudo apt install git # yum en centOS, dnf fedora...
+sudo apt install git # En este caso en mint/ubuntu
 ```
-Una vez lo tengas instalados miras de nuevo ```git --version```, te debería salir esto:
+Una vez lo tengas instalados prueba de nuevo ```git --version```, te debería salir esto:
 
 <p align="center">
     <img src="pictures/2git_version.png">
@@ -52,7 +50,7 @@ Te recomiendo que copies el script en sí en tu usuario del home, para correrlo 
 * Cómo git maneja las terminaciones de líneas.
 * El editor de texto básico que usarás.
 
-De esta manera mostraré un ejemplo con mis credenciales. Hasta donde tengo entendido **Juan Carlos soy yo**, pon tus propias credenciales.
+De esta manera mostraré un ejemplo con mis credenciales. 
 
 <p align="center">
     <img src="pictures/3credenciales_git.png">
@@ -81,7 +79,7 @@ La segunda parte consiste en crear la SHH key, para ello sólo tienes que realiz
     <img src="pictures/4shh_key1.png">
 </p>
 
-2) Después de ese símbolo raro te va a pedir esta vez que insertes la passphrase que has creado. Y te pritará el resultado de tu key: tienes que copiarlo (ratón) desde **flecha roja**-**flecha roja**.
+2) Después de ese símbolo extraño te va a pedir esta vez que insertes la passphrase que has creado. Y te pritará el resultado de tu key: tienes que copiarlo (ratón) desde **flecha roja**-**flecha roja**.
 
 <p align="center">
     <img src="pictures/5shhkey2.png">
@@ -113,6 +111,4 @@ La segunda parte consiste en crear la SHH key, para ello sólo tienes que realiz
 
 
 Y con esto ya debería aparecerte como resultado en SHH and GPG keys una de estas, si no te saldrá un mensaje en rojo arriba de que hay algo mal. 
-
-He de decir que la key esta no pude comprobar que me salió bien ya que lo probé en un ordenador viejo y la darle al Add SSH key mi ordenador estalló (era uno de estps viejos con linux mint). Pero otros dos, me ido perfecto y se me han generado bien.
 
