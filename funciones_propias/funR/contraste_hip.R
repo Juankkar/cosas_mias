@@ -13,7 +13,7 @@ library(DescTools)
 ##### Comparar dos grupos independientes
 
 tw.groups <- function(df,var_num,valor, var_cat,g1,g2) {
-  attach(df)
+  attach(df, warn.conflicts=FALSE)
   G1 = subset(df, var_cat == g1)
   uno=G1[,valor]
   G2 = subset(df, var_cat == g2)
@@ -46,7 +46,7 @@ tw.groups <- function(df,var_num,valor, var_cat,g1,g2) {
 ###### Comparar 3 grupos independientes (en caso de valores sigificativos, tienes que hacer tu el post_hoc)
 
 th.groups <- function(df,var_num,valor, var_cat,g1,g2,g3) {
-  attach(df)
+  attach(df, warn.conflicts=FALSE)
   G1 = subset(df, var_cat == g1)
   uno=G1[,valor]
   G2 = subset(df, var_cat == g2)
@@ -81,7 +81,7 @@ th.groups <- function(df,var_num,valor, var_cat,g1,g2,g3) {
 
 ###### Comparar 4 grupos independientes (en caso de valores sigificativos, tienes que hacer tu el post_hoc)
 fo.groups <- function(df,var_num,valor, var_cat,g1,g2,g3,g4) {
-  attach(df)
+  attach(df, warn.conflicts=FALSE)
   G1 = subset(df, var_cat == g1)
   uno=G1[,valor]
   G2 = subset(df, var_cat == g2)
