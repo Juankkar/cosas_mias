@@ -8,7 +8,7 @@
 
 library(tidyverse)
 library(rstatix)
-library(DescTools)
+library(car)
 
 ##### Comparar dos grupos independientes
 
