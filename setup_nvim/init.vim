@@ -1,6 +1,10 @@
 " Pluggins
 
-call plug#begin()
+ call plug#begin()
+ 
+ " background
+
+Plug 'nightsense/snow'
 
 Plug 'gmarik/Vundle.vim'
 " Nerd Tree
@@ -18,15 +22,31 @@ Plug 'Yggdroot/indentLine' " Indent line para marcar las tabulaciones
 Plug 'https://tpope.io/vim/fugitive.git'
 Plug 'https://github.com/preservim/tagbar' " Tagbar
 Plug 'https://github.com/tpope/vim-commentary.git'
-
+ 
 " R programming nvim
-Plug 'jalvesaq/Nvim-R'
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
+Plug 'jalvesaq/Nvim-R'
 Plug 'gaalcaras/ncm-R'
-Plug 'Raimondi/delimitMate'
-Plug 'patstockwell/vim-monokai-tasty'
-Plug 'itchyny/lightline.vim'
+
+" Vim 8 only
+if !has('nvim')
+    Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+" Optional: for snippet support
+" Further configuration might be required, read below
+Plug 'sirver/UltiSnips'
+Plug 'ncm2/ncm2-ultisnips'
+
+" Optional: better Rnoweb support (LaTeX completion)
+Plug 'lervag/vimtex'
+
+" Snameke plugs
+Plug 'raivivek/vim-snakemake'
+
+" treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
 
@@ -53,3 +73,10 @@ set encoding=UTF-8
 set laststatus=2
 
 
+colorscheme snow
+
+if strftime('%H') >= 7 && strftime('%H') < 19
+  set background=light
+else
+  set background=dark
+endif
