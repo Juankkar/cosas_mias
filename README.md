@@ -7,3 +7,7 @@
   * ### **2)** [Set up de git.](setup_git)
 
   * ### **3)** [set ip de nvim.](setup_nvim)
+
+Jornadas de divulgación ambiental en directo: 
+
+    https://www.youtube.com/watch?v=J7NDuHmOukY
